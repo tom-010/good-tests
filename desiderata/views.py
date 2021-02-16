@@ -10,3 +10,11 @@ class DetailView(View):
             'desiderata': desiderata
         }
         return render(request, 'desiderata/detail.html', context)
+
+class DesiderataListView(View):
+
+    def get(self, request, *args, **kwargs):
+        context = {
+            'desideratas': Desiderata.objects.all()
+        }
+        return render(request, 'desiderata/all.html', context)

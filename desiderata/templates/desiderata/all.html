@@ -1,0 +1,13 @@
+<html>
+<body>
+<ul>
+{% for desiderata in desideratas %}
+<li>
+    <a href="{% url 'desiderata:detail' desiderata.slug %}">
+        {{desiderata.name}}
+    </a>
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>

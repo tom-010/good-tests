@@ -4,5 +4,6 @@ from desiderata import views
 app_name = 'desiderata'
 
 urlpatterns = [
-    path('<desiderata_slug>', views.DetailView.as_view(), name='detail'),
+    path('detail/<desiderata_slug>', views.DetailView.as_view(), name='detail'),
+    path('all', views.DesiderataListView.as_view(), name='all'),
 ]
