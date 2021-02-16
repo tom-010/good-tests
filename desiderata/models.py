@@ -13,3 +13,6 @@ class Desiderata(models.Model):
         return Desiderata(
             name='Desiderata-Name',
             description='Desiderata-Description')
+
+    def __str__(self):
+        return self.name
