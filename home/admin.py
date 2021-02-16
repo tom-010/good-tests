@@ -1,3 +1,4 @@
 from django.contrib import admin
+from desiderata.models import Desiderata
 
-# Register your models here.
+admin.register(Desiderata)
