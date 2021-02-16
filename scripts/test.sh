@@ -1,0 +1,1 @@
+NO_EXTERNAL_DEPS=1 USE_SQLITE=1 python3 manage.py test ${@:1} --parallel
