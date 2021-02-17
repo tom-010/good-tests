@@ -5,3 +5,4 @@ Fabric3==1.14.post1
 gunicorn==20.0.4
 django-autoslug==1.9.8
 django-tinymce==3.2.0
+django-import-export==2.2.0

@@ -28,6 +28,7 @@ INSTALLED_APPS = [
 
     # third party
     'tinymce',
+    'import_export',
 
     # modules
     'home',
