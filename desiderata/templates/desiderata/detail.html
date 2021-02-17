@@ -1,5 +1,11 @@
 <html>
-<body>
-<h1>{{desiderata.name}}</h1>
-</body>
+  <body>
+    <div class="desiderata">
+      <h1 class="name">{{desiderata.name}}</h1>
+      <div class="video">
+        {% include 'desiderata/_youtube_video.html' %}
+      </div>
+      <div class="description">{{desiderata.description|safe}}</div>
+    </div>
+  </body>
 </html>
